@@ -2,8 +2,8 @@ title: Control D Guide
 description: A practical guide to setting up and maintaining Control D with balanced filtering, Hagezi recommendations, troubleshooting, and maintainable custom rules.
 url: https://the-wittch.github.io
 baseurl: /Control-D-Guide
-logo: /docs/assets/favicon.svg
-favicon: /docs/assets/favicon.svg
+logo: /Control-D-Guide/assets/favicon.svg
+favicon: /Control-D-Guide/assets/favicon.svg
 theme: minima
 show_downloads: false
 header_pages:

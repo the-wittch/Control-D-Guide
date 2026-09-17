@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Control D Guide banner</title>
+  <desc id="desc">Simple setup. Practical protection. Easy maintenance.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1"><stop offset="0" stop-color="#0b1220"/><stop offset="1" stop-color="#17324a"/></linearGradient>
+    <linearGradient id="accent" x1="0" x2="1"><stop offset="0" stop-color="#67e8f9"/><stop offset="1" stop-color="#34d399"/></linearGradient>
+  </defs>
+  <rect width="1200" height="300" fill="url(#bg)" rx="22"/>
+  <circle cx="1020" cy="-15" r="220" fill="#34d399" opacity=".12"/><circle cx="1120" cy="270" r="170" fill="#67e8f9" opacity=".10"/>
+  <path d="M120 72h188c22 0 40 18 40 40v76c0 22-18 40-40 40H120c-22 0-40-18-40-40v-76c0-22 18-40 40-40Z" fill="none" stroke="url(#accent)" stroke-width="9"/>
+  <path d="m126 148 48 48 105-130" fill="none" stroke="url(#accent)" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="410" y="130" font-family="Arial,Helvetica,sans-serif" font-size="64" font-weight="700" fill="#f1faff">Control D Guide</text>
+  <text x="414" y="184" font-family="Arial,Helvetica,sans-serif" font-size="27" fill="#bde4f4">Simple setup · Practical protection · Easy maintenance</text>
+  <rect x="414" y="216" width="194" height="42" rx="21" fill="url(#accent)"/><text x="453" y="244" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#07131d">Start simply</text>
+</svg>

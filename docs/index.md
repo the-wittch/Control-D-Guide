@@ -1,6 +1,6 @@
 # Control D Guide
 
-<img class="guide-banner" src="assets/control-d-guide-banner.svg" alt="Control D Guide — Simple setup. Practical protection. Easy maintenance.">
+<img class="guide-banner" src="{{ '/assets/control-d-guide-banner.svg' | relative_url }}" alt="Control D Guide — Simple setup. Practical protection. Easy maintenance.">
 
 ## Practical DNS filtering for everyday use
 
@@ -9,9 +9,9 @@ A practical, beginner-friendly guide to setting up and maintaining [Control D](h
 Start with one profile, one device, and a moderate filter set. Learn how your configuration behaves before adding more rules or enabling more aggressive protection.
 
 <div class="guide-actions">
-  <a class="button button-primary" href="getting-started.md">Start with the basics</a>
-  <a class="button" href="starter-profiles.md">View starter profiles</a>
-  <a class="button" href="cheat-sheet.md">Open the cheat sheet</a>
+  <a class="button button-primary" href="{{ '/docs/getting-started.html' | relative_url }}">Start with the basics</a>
+  <a class="button" href="{{ '/docs/starter-profiles.html' | relative_url }}">View starter profiles</a>
+  <a class="button" href="{{ '/docs/cheat-sheet.html' | relative_url }}">Open the cheat sheet</a>
 </div>
 
 ## The goal
