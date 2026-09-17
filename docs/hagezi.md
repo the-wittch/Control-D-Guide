@@ -1,64 +1,42 @@
 # Using Hagezi Lists
 
-[Hagezi's DNS Blocklists](https://github.com/hagezi/dns-blocklists) are a popular source of third-party filter lists.
+[Hagezi's DNS Blocklists](https://github.com/hagezi/dns-blocklists) are a strong choice for many users because they are practical, active, and useful without forcing you to stack dozens of unrelated lists.
 
-They are especially valued because they often combine broad coverage with careful filtering practices and strong maintenance.
+## My approach
 
-## Why Hagezi is useful
+I do not use Hagezi in an all-or-nothing way.
 
-Hagezi lists can provide:
+Instead, I use it like this:
 
-- Useful malware and tracker coverage
-- Strong blocking for suspicious domains
-- A practical way to improve privacy without blindly stacking every list available
-
-## Do not enable everything
-
-A common mistake is enabling multiple Hagezi variants at the same time without understanding their purpose.
-
-The better approach is:
-
-- Pick one list level that fits your needs
-- Test it on one profile first
+- Pick one Hagezi list level
+- Test it on one profile
 - Watch for false positives
-- Add exceptions only where necessary
+- Add only small, targeted exceptions
+- Keep the configuration stable and understandable
 
-## Start conservative
+This is usually a better approach than enabling every Hagezi variant at once.
 
-If you are new to DNS filtering, a good workflow is:
+## Good beginner rule
 
-1. Choose one Hagezi list
-2. Apply it to a single profile
-3. Use it for several days
-4. Watch for unexpected blockages
-5. Adjust only if needed
+If you are new to DNS filtering, start with one Hagezi list that matches your tolerance for risk and maintenance.
 
-This keeps the setup easier to maintain and easier to troubleshoot.
+If you are more aggressive, you can later explore more specialized lists. But the first step should still be simple and conservative.
 
 ## Specialized folders
 
-Hagezi also offers specialized Control D folder imports for certain categories.
+Hagezi also offers specialized Control D folders. These may be useful, but they can have a higher chance of creating false positives or blocking something legitimate.
 
-These can be useful, but they should be treated carefully because some specialized rules are more likely to create false positives.
+Use them with care and test them on a less important profile before applying them everywhere.
 
-Before importing a specialized folder:
+## The real principle
 
-- Read the description
-- Understand what it blocks
-- Consider whether your region or usage pattern makes it less appropriate
-- Test it on a less critical profile first
+Hagezi is not a replacement for thoughtful configuration.
 
-## False positives are normal
+It is a useful filter source, not a license to overblock everything.
 
-Even good lists can block something legitimate.
+The best result is usually:
 
-When that happens:
-
-- Check the blocked query
-- Determine whether the domain is truly necessary
-- Add a narrow allowlist entry if appropriate
-- Keep the exception specific and temporary if possible
-
-## Bottom line
-
-Hagezi is a strong option, but it is best used with care and moderation. A single well-chosen list is often better than stacking several lists that you do not understand.
+- One good list
+- One stable profile
+- A few intentional exceptions
+- A calm maintenance routine
