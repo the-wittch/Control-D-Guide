@@ -1,0 +1,143 @@
+@import "minima";
+
+:root {
+  --guide-ink: #172033;
+  --guide-muted: #536176;
+  --guide-border: #dbe4ee;
+  --guide-accent: #0f766e;
+  --guide-accent-dark: #115e59;
+  --guide-surface: #f5f8fb;
+}
+
+body {
+  color: var(--guide-ink);
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.7;
+}
+
+.site-header {
+  border-top: 5px solid var(--guide-accent);
+  border-bottom: 1px solid var(--guide-border);
+}
+
+.site-title,
+.site-title:visited,
+.page-link,
+.page-link:visited {
+  color: var(--guide-ink);
+}
+
+.site-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.wrapper {
+  max-width: 980px;
+}
+
+.page-content {
+  padding: 2.5rem 1rem 4rem;
+}
+
+.guide-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 2.25rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(23, 32, 51, .14);
+}
+
+.post-title,
+.page-heading {
+  color: var(--guide-ink);
+  letter-spacing: -0.03em;
+}
+
+.post-content h2 {
+  margin-top: 2.4rem;
+  padding-bottom: .35rem;
+  border-bottom: 1px solid var(--guide-border);
+}
+
+.post-content h3 {
+  margin-top: 1.8rem;
+}
+
+.post-content a {
+  color: var(--guide-accent-dark);
+  font-weight: 500;
+}
+
+.post-content table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border: 1px solid var(--guide-border);
+  border-radius: 10px;
+}
+
+.post-content th {
+  color: #fff;
+  background: var(--guide-accent);
+}
+
+.post-content th,
+.post-content td {
+  padding: .75rem 1rem;
+  border: 1px solid var(--guide-border);
+  text-align: left;
+}
+
+.post-content tr:nth-child(even) {
+  background: var(--guide-surface);
+}
+
+.post-content blockquote {
+  margin: 1.5rem 0;
+  padding: .8rem 1.2rem;
+  color: var(--guide-muted);
+  background: var(--guide-surface);
+  border-left: 4px solid var(--guide-accent);
+  border-radius: 0 8px 8px 0;
+}
+
+.guide-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem;
+  margin: 1.7rem 0 2.5rem;
+}
+
+.button {
+  display: inline-block;
+  padding: .55rem 1rem;
+  color: var(--guide-accent-dark) !important;
+  background: #fff;
+  border: 1px solid #b8d5d2;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.button:hover {
+  color: #fff !important;
+  background: var(--guide-accent);
+  text-decoration: none;
+}
+
+.button-primary {
+  color: #fff !important;
+  background: var(--guide-accent);
+  border-color: var(--guide-accent);
+}
+
+@media screen and (max-width: 600px) {
+  .page-content { padding-top: 1.5rem; }
+  .guide-banner { border-radius: 10px; }
+  .guide-actions { display: block; }
+  .button { display: block; margin: .6rem 0; text-align: center; }
+}
