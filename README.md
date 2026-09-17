@@ -2,21 +2,11 @@
 
 A beginner-friendly guide to setting up and maintaining Control D without making the configuration more complicated than it needs to be.
 
-This project is designed for people who want better DNS privacy, better filtering, and a maintainable setup that stays usable over time.
+<img src="docs/assets/control-d-guide-banner.svg" alt="Control D Guide banner" width="100%" />
 
-## Why this guide exists
+## Why this project exists
 
-Control D can be powerful, but it is easy to overdo it. The goal of this guide is to help you get the benefits of DNS filtering while keeping the configuration practical and easy to troubleshoot.
-
-## What you will find here
-
-- A simple way to get started
-- Basic recommendations for profiles and devices
-- Guidance on filters and third-party lists
-- Advice on custom rules and allowlists
-- Practical notes on using Hagezi lists
-- Troubleshooting steps for broken websites and apps
-- A maintenance routine so your setup stays stable
+Control D is powerful, but it is easy to overdo it. This project exists to keep things practical: useful protection without turning DNS into a constant troubleshooting exercise.
 
 ## Recommended starter profile
 
@@ -38,7 +28,7 @@ A good beginner setup is usually:
 
 The best configuration is not the most aggressive one. It is the one that works reliably and is easy to maintain.
 
-## How I use Hagezi
+## My Hagezi approach
 
 I like Hagezi as a quality filter source, but I do not stack everything at once.
 
@@ -50,9 +40,17 @@ My preferred approach is:
 - Add only narrow exceptions where they are clearly needed
 - Keep the configuration boring and stable rather than maximal
 
-The whole point is to get useful protection without turning your internet into a support ticket.
+This is the difference between a strong config and a chaotic one.
 
-## Start here
+## Quick cheat sheet
+
+- Start with one profile and one device
+- Use Moderate or Balanced settings before going Hardened
+- Keep allowlist entries narrow and specific
+- Review your setup periodically
+- Avoid adding multiple filters at once
+
+## Section index
 
 1. [Getting Started](docs/getting-started.md)
 2. [Profiles and Devices](docs/profiles-and-devices.md)
@@ -62,6 +60,8 @@ The whole point is to get useful protection without turning your internet into a
 6. [Using Hagezi Lists](docs/hagezi.md)
 7. [Troubleshooting](docs/troubleshooting.md)
 8. [Maintenance](docs/maintenance.md)
+9. [Quick Cheat Sheet](docs/cheat-sheet.md)
+10. [My Personal Setup](docs/my-personal-setup.md)
 
 ## Notes
 

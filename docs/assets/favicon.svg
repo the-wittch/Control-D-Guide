@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Control D Guide favicon</title>
+  <desc id="desc">A minimal favicon for the Control D Guide.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="#0b1220"/>
+  <path d="M30 44h68c8 0 14 6 14 14v12c0 8-6 14-14 14H30c-8 0-14-6-14-14V58c0-8 6-14 14-14z" fill="none" stroke="url(#g)" stroke-width="8"/>
+  <path d="M45 74l20 20 38-48" fill="none" stroke="url(#g)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,2 +1,17 @@
 title: Control D Guide
-theme: minima
+description: A beginner-friendly guide to setting up and maintaining Control D without turning your DNS setup into a constant troubleshooting project.
+# Use the default Minima theme, with a simple nav at the top.
+header_pages:
+  - README.md
+  - docs/getting-started.md
+  - docs/profiles-and-devices.md
+  - docs/starter-profiles.md
+  - docs/filters.md
+  - docs/custom-rules.md
+  - docs/hagezi.md
+  - docs/troubleshooting.md
+  - docs/maintenance.md
+  - docs/cheat-sheet.md
+  - docs/my-personal-setup.md
+favicon: /docs/assets/favicon.svg
+show_downloads: false

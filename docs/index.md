@@ -1,65 +1,65 @@
 # Control D Guide
 
-Welcome to the Control D Guide.
+<img src="/docs/assets/control-d-guide-banner.svg" alt="Control D Guide banner" width="100%" />
 
-This site is a beginner-friendly setup and maintenance guide for [Control D](https://controld.com/). It is designed for people who want a practical DNS configuration that is useful, manageable, and not constantly breaking websites.
+A beginner-friendly guide to setting up and maintaining Control D without making your DNS setup more complicated than it needs to be.
 
 ## Quick start
 
-If you are new to Control D, the best path is simple:
+If you are brand new to Control D, use this path:
 
 - Start with one profile
 - Add one device
-- Use a moderate filter set
-- Test for a few days before changing anything else
-- Add narrow exceptions only when needed
+- Keep the filter set moderate
+- Test for a few days before making more changes
+- Add small exceptions only when they are clearly needed
 
 ## Recommended starter profile
 
-A sensible beginner profile usually includes:
+A sane beginner setup usually includes:
 
-| Profile area | Recommendation |
-|---|---|
-| Malware | Enabled |
-| Phishing | Enabled |
-| Ad/tracker filtering | Moderate level |
-| Third-party lists | One trusted source only |
-| Exceptions | Keep them specific and documented |
-| Aggression level | Conservative to balanced |
+- Malware filtering enabled
+- Phishing filtering enabled
+- One moderate ad and tracker filter
+- One trusted third-party list only
+- A small allowlist for real exceptions
+- A balanced approach instead of a maximal one
 
-This keeps the setup useful without making it frustrating to maintain.
+This gives you practical protection without turning the setup into a support project.
 
-## How I use Hagezi
+## My Hagezi approach
 
-I like Hagezi lists because they are practical and generally well maintained, but I still do not enable everything on day one.
+I like Hagezi, but I do not enable everything at once.
 
 My process is:
 
-- Start with one Hagezi list level
+- Pick a single Hagezi list level that is comfortable for you
 - Apply it to one profile only
 - Use it for a few days
 - Watch for false positives
-- Add small allowlist rules only when they are clearly needed
+- Add only narrow allowlist entries where truly necessary
 
-This is the difference between a strong setup and a chaotic one.
+That is the difference between a strong config and a chaotic one.
 
-## Start here
+## Recommended sections
 
-- [Getting Started](getting-started.md)
-- [Profiles and Devices](profiles-and-devices.md)
-- [Starter Profiles](starter-profiles.md)
-- [Filters](filters.md)
-- [Custom Rules](custom-rules.md)
-- [Using Hagezi Lists](hagezi.md)
-- [Troubleshooting](troubleshooting.md)
-- [Maintenance](maintenance.md)
+- [Getting Started](docs/getting-started.md)
+- [Profiles and Devices](docs/profiles-and-devices.md)
+- [Starter Profiles](docs/starter-profiles.md)
+- [Filters](docs/filters.md)
+- [Custom Rules](docs/custom-rules.md)
+- [Using Hagezi Lists](docs/hagezi.md)
+- [Troubleshooting](docs/troubleshooting.md)
+- [Maintenance](docs/maintenance.md)
+- [Quick Cheat Sheet](docs/cheat-sheet.md)
+- [My Personal Setup](docs/my-personal-setup.md)
 
-## Quick recommendations
+## Best practice summary
 
-- Start with one profile and one device.
-- Use a moderate configuration before going more aggressive.
-- Add exceptions only when they are truly necessary.
-- Review your configuration periodically instead of constantly changing it.
-- Keep your rules boring, specific, and easy to understand.
+- Start simple
+- Use a moderate profile first
+- Keep exceptions narrow and documented
+- Review your setup periodically
+- Stop adding filters when things feel stable
 
-This guide is designed to help you build a practical, maintainable Control D setup without making the configuration harder than it needs to be.
+This guide is designed to help you build a practical, maintainable Control D setup that stays usable over time.
