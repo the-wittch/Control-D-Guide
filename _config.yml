@@ -1,17 +1,17 @@
 title: Control D Guide
-description: A beginner-friendly guide to setting up and maintaining Control D without turning your DNS setup into a constant troubleshooting project.
-# Use the default Minima theme, with a simple nav at the top.
+description: A practical guide to setting up and maintaining Control D with balanced filtering, Hagezi recommendations, troubleshooting, and maintainable custom rules.
+url: https://the-wittch.github.io
+baseurl: /Control-D-Guide
+logo: /docs/assets/favicon.svg
+favicon: /docs/assets/favicon.svg
+theme: minima
+show_downloads: false
 header_pages:
-  - README.md
+  - docs/index.md
   - docs/getting-started.md
-  - docs/profiles-and-devices.md
   - docs/starter-profiles.md
   - docs/filters.md
   - docs/custom-rules.md
   - docs/hagezi.md
   - docs/troubleshooting.md
   - docs/maintenance.md
-  - docs/cheat-sheet.md
-  - docs/my-personal-setup.md
-favicon: /docs/assets/favicon.svg
-show_downloads: false

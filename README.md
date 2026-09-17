@@ -1,56 +1,28 @@
 # Control D Guide
 
-A beginner-friendly guide to setting up and maintaining Control D without making the configuration more complicated than it needs to be.
+## Practical DNS filtering for everyday use
 
-<img src="docs/assets/control-d-guide-banner.svg" alt="Control D Guide banner" width="100%" />
+A practical guide to setting up and maintaining [Control D](https://controld.com/) with balanced filtering, Hagezi recommendations, troubleshooting, and maintainable custom rules.
 
-## Why this project exists
+This public guide is for people who want stronger privacy and security without turning their DNS configuration into a constant troubleshooting project. It focuses on sensible defaults, gradual changes, targeted exceptions, and a setup that remains understandable over time.
 
-Control D is powerful, but it is easy to overdo it. This project exists to keep things practical: useful protection without turning DNS into a constant troubleshooting exercise.
+## What this guide covers
 
-## Recommended starter profile
+- Setting up Control D for the first time
+- Organizing profiles and devices
+- Choosing balanced filters without unnecessary overblocking
+- Using Hagezi lists responsibly
+- Creating targeted allowlist and denylist rules
+- Troubleshooting websites and applications
+- Reviewing and maintaining your configuration
 
-If you are just getting started, keep it simple:
+## Recommended starting point
 
-- One profile for everyday browsing
-- One device at a time
-- Malware and phishing protection enabled
-- One moderate ad/tracker filter
-- A small allowlist for actual exceptions
+Start with one profile and one device. Enable malware and phishing protection, choose one moderate ad and tracker filter, and use the configuration for a few days before making additional changes.
 
-A good beginner setup is usually:
+The goal is not to block the most domains possible. The goal is reliable protection that works with the websites, applications, and devices you use every day.
 
-- Malware protection
-- Phishing protection
-- One moderate ad/tracker filter
-- A small allowlist for exceptions
-- No unnecessary overblocking
-
-The best configuration is not the most aggressive one. It is the one that works reliably and is easy to maintain.
-
-## My Hagezi approach
-
-I like Hagezi as a quality filter source, but I do not stack everything at once.
-
-My preferred approach is:
-
-- Start with a single Hagezi list level that matches your tolerance for false positives
-- Use it on one profile first
-- Test it for a few days
-- Add only narrow exceptions where they are clearly needed
-- Keep the configuration boring and stable rather than maximal
-
-This is the difference between a strong config and a chaotic one.
-
-## Quick cheat sheet
-
-- Start with one profile and one device
-- Use Moderate or Balanced settings before going Hardened
-- Keep allowlist entries narrow and specific
-- Review your setup periodically
-- Avoid adding multiple filters at once
-
-## Section index
+## Browse the guide
 
 1. [Getting Started](docs/getting-started.md)
 2. [Profiles and Devices](docs/profiles-and-devices.md)
@@ -63,8 +35,10 @@ This is the difference between a strong config and a chaotic one.
 9. [Quick Cheat Sheet](docs/cheat-sheet.md)
 10. [My Personal Setup](docs/my-personal-setup.md)
 
-## Notes
+## Related resources
 
-This guide is not official Control D documentation and not a guarantee that any single setup will work for every device or household.
+- [Control D](https://controld.com/)
+- [Control D documentation](https://docs.controld.com/)
+- [Hagezi DNS Blocklists](https://github.com/hagezi/dns-blocklists)
 
-The official documentation is still the best source for feature-level details and product changes.
+> This is an independent community guide, not official Control D documentation. Product features and recommendations may change; consult the official documentation for current feature details.
