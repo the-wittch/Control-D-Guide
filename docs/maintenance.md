@@ -1,70 +1,59 @@
 # Maintenance
 
-A good Control D configuration should be reviewed occasionally, but it should not require constant adjustment.
+A good Control D setup should be reviewed occasionally, not constantly rebuilt.
 
-## Review your configuration periodically
+## Review filters and rules periodically
 
-Every few months, review:
+Every few weeks or months, check:
 
 - Enabled filters
-- Custom rules
-- Allowlist entries
+- Custom allowlist entries
 - Denylist entries
 - Imported folders
-- Profile assignments
-- Devices you no longer use
+- Device assignments
+- Profiles no longer in use
 
-Remove rules that are no longer necessary.
+Remove stale or unnecessary rules.
 
-## Keep a simple change record
+## Keep changes deliberate
 
-For each significant change, note:
+When changing anything, do it one step at a time.
 
-- What changed
-- Why it changed
-- Which profile it affects
-- Whether it solved a problem
+Recommended order:
 
-This can be a simple text file or a section in your repository.
+1. Change only one filter or rule
+2. Test the profile normally
+3. Record the result
+4. Keep or revert based on the outcome
 
-## Watch for overblocking
+This is the easiest way to maintain a stable setup.
 
-Warning signs include:
+## Watch for signs of overblocking
 
-- Frequently adding allowlist entries
-- Websites breaking unexpectedly
-- Family members reporting connection problems
-- Applications failing after enabling a new list
-- Not knowing which filter caused a problem
+Common warning signs include:
 
-If this happens, simplify the configuration instead of adding more exceptions.
+- Frequent exception requests
+- Unexpected website failures
+- Apps failing after a filter update
+- Family members reporting problems with otherwise normal browsing
+- Not knowing which filter caused the issue
 
-## Update carefully
+If a setup becomes hard to understand, simplify it.
 
-When changing filters:
+## Keep backup notes
 
-1. Change one thing at a time.
-2. Test the affected profile.
-3. Use the configuration normally.
-4. Keep notes about the result.
-5. Revert the change if it creates problems.
+It helps to keep copies of your important rules in a simple document or repository.
 
-Changing multiple filters at once makes troubleshooting much harder.
+This makes it easier to:
 
-## Keep a backup
-
-Save copies of important custom rules or folders outside the Control D dashboard.
-
-A backup can help you:
-
-- Recreate a profile
-- Recover from an accidental change
-- Compare configurations
-- Move rules to another profile
-- Document your setup
+- Rebuild a profile
+- Compare versions
+- Move rules to a new device
+- Audit exceptions
+- Recover from mistakes
 
 ## The goal
 
-The goal is not to maximize the number of blocked requests.
+The goal is not to block everything.
 
-The goal is a reliable configuration that improves privacy and security while allowing the internet services you need to work normally.
+The goal is to create a DNS setup that improves privacy and security while keeping the internet usable and maintainable.

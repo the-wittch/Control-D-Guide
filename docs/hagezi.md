@@ -1,68 +1,64 @@
 # Using Hagezi Lists
 
-[Hagezi's DNS Blocklists](https://github.com/hagezi/dns-blocklists) are widely used third-party lists for blocking advertisements, trackers, malware, and other unwanted domains.
+[Hagezi's DNS Blocklists](https://github.com/hagezi/dns-blocklists) are a popular source of third-party filter lists.
 
-They are available in different versions with different levels of aggressiveness.
+They are especially valued because they often combine broad coverage with careful filtering practices and strong maintenance.
 
-## Choose one level
+## Why Hagezi is useful
 
-Do not enable every Hagezi list at the same time.
+Hagezi lists can provide:
 
-Choose the list that matches your needs and tolerance for troubleshooting.
+- Useful malware and tracker coverage
+- Strong blocking for suspicious domains
+- A practical way to improve privacy without blindly stacking every list available
 
-In general:
+## Do not enable everything
 
-- A normal or moderate list is a good starting point.
-- A stronger list provides more coverage but may cause more false positives.
-- Aggressive lists require more maintenance.
-- Specialized lists should be enabled only when you understand their purpose.
+A common mistake is enabling multiple Hagezi variants at the same time without understanding their purpose.
 
-The exact names and availability of lists may change. Check the Hagezi documentation for current descriptions.
+The better approach is:
 
-## Start conservatively
+- Pick one list level that fits your needs
+- Test it on one profile first
+- Watch for false positives
+- Add exceptions only where necessary
 
-If you are new to DNS filtering:
+## Start conservative
 
-1. Choose one Hagezi list.
-2. Enable it for one profile.
-3. Use the profile normally for several days.
-4. Check the query log when something breaks.
-5. Add exceptions only when necessary.
+If you are new to DNS filtering, a good workflow is:
 
-Do not combine several lists just because they are available.
+1. Choose one Hagezi list
+2. Apply it to a single profile
+3. Use it for several days
+4. Watch for unexpected blockages
+5. Adjust only if needed
 
-## Hagezi Control D folders
+This keeps the setup easier to maintain and easier to troubleshoot.
 
-Hagezi also provides folders intended for import into Control D custom rules.
+## Specialized folders
 
-For example, the project may provide folders for:
+Hagezi also offers specialized Control D folder imports for certain categories.
 
-- Spam-related top-level domains
-- Suspicious internationalized domain names
-- Other specialized categories
+These can be useful, but they should be treated carefully because some specialized rules are more likely to create false positives.
 
-Review the current files and instructions in the [Hagezi repository](https://github.com/hagezi/dns-blocklists/tree/main/controld) before importing anything.
+Before importing a specialized folder:
 
-## Use specialized folders carefully
+- Read the description
+- Understand what it blocks
+- Consider whether your region or usage pattern makes it less appropriate
+- Test it on a less critical profile first
 
-Specialized folders can be useful, but they may have a higher risk of false positives.
+## False positives are normal
 
-Before importing one:
+Even good lists can block something legitimate.
 
-- Read its description.
-- Understand what it blocks.
-- Consider whether it applies to your region.
-- Keep a record of where it came from.
-- Test it on a less important profile first.
+When that happens:
 
-## Hagezi is not a replacement for troubleshooting
+- Check the blocked query
+- Determine whether the domain is truly necessary
+- Add a narrow allowlist entry if appropriate
+- Keep the exception specific and temporary if possible
 
-Even a well-maintained list can block something that you need.
+## Bottom line
 
-When a website or application fails:
-
-1. Check Control D's query log.
-2. Identify the blocked domain.
-3. Determine whether it is necessary.
-4. Add a narrow allowlist entry if appropriate.
-5. Report a false positive to the list maintainer when applicable.
+Hagezi is a strong option, but it is best used with care and moderation. A single well-chosen list is often better than stacking several lists that you do not understand.

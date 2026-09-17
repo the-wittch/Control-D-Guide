@@ -1,67 +1,72 @@
 # Troubleshooting
 
-DNS filtering can occasionally interfere with websites and applications. Most problems can be resolved by identifying the blocked request.
+DNS filtering usually works well, but websites and apps occasionally break. The most important skill is learning how to identify the exact blocked domain and fix the issue without removing your protections entirely.
 
 ## A website does not load
 
-1. Confirm that the problem occurs only when Control D is enabled.
-2. Open the Control D query log.
-3. Look for blocked requests made when loading the website.
-4. Identify the domain associated with the failure.
-5. Temporarily allow the suspected domain.
-6. Test the website again.
+When a website fails, check the following:
 
-If allowing the domain fixes the problem, decide whether the domain is necessary and trustworthy before keeping the exception.
+1. Confirm the problem only occurs with Control D enabled
+2. Open the query log
+3. Look for blocked domains related to the page
+4. Identify the specific request causing the issue
+5. Add a minimal allowlist exception if needed
 
-## An application cannot connect
+This is much safer than disabling filters broadly.
 
-Applications may use domains that are not obvious from the application name.
+## An app cannot connect
 
-Check for:
+Applications often connect to domains that are not obvious from the app name alone. Some common examples include:
 
-- Authentication domains
-- API endpoints
-- Content delivery networks
-- Analytics or telemetry domains
+- Authentication services
+- CDN networks
+- Analytics endpoints
 - Push notification services
-- Certificate or update services
+- Update servers
+- API hosts
 
-Allow only the domains required for the application to work.
+If a single app breaks, do not guess. Check the query log and find the actual blocked domain.
 
-## A website partially loads
+## A page loads partially
 
-If the page loads but images, videos, login forms, or other features do not work:
+If a page loads but images, login buttons, or other features fail, the issue is often one missing dependency rather than a total block.
 
-- Check blocked requests while using the affected feature.
-- Look for content delivery or API domains.
-- Test the feature after adding a narrow exception.
-- Avoid allowing the entire domain unless necessary.
+Look for:
 
-## Clear cached DNS information
+- Image hosts
+- Video delivery domains
+- Tracking scripts
+- Embedded API hosts
 
-After changing a rule, the previous DNS result may still be cached.
+Again, keep the exception narrow and precise.
+
+## Clear cached results when needed
+
+After making changes to rules, DNS results may remain cached for a little while.
 
 Try:
 
-- Reloading the website.
-- Closing and reopening the application.
-- Restarting the browser.
-- Flushing the local DNS cache.
-- Restarting the device or network connection.
+- Reloading the website
+- Closing and reopening the app
+- Restarting the browser
+- Flushing local DNS cache if needed
+- Restarting the device or router
 
-## Temporarily disable a profile
+## Temporary disable as a diagnostic step
 
-If you cannot identify the problem, temporarily disable the relevant filters or profile to confirm whether Control D is involved.
+If you cannot identify the blocked domain, temporarily disable a profile for a moment to confirm it is the cause.
 
-Re-enable the protection after testing. Disabling everything should be a diagnostic step, not the permanent solution.
+This should be a troubleshooting step, not a permanent workaround.
 
-## Avoid random exceptions
+## Keep a log of exceptions
 
-A large collection of unexplained allowlist entries becomes difficult to trust and maintain.
+Every allowlist or custom rule should ideally have a reason behind it.
 
-For every exception, record:
+Record:
 
 - The domain
-- The date
-- The affected application or website
+- The date it was added
+- The website or app it fixed
 - Why it was necessary
+
+This greatly reduces later confusion.

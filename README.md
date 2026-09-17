@@ -1,34 +1,24 @@
 # Control D Guide
 
-A beginner-friendly guide to setting up and maintaining [Control D](https://controld.com/).
+A beginner-friendly guide to setting up and maintaining Control D without making the configuration more complicated than it needs to be.
 
-This guide is intended for people who want better DNS privacy, ad and tracker blocking, malware protection, and practical control over their internet connection without creating an unnecessarily complicated configuration.
+This project is designed for people who want better DNS privacy, better filtering, and a maintainable setup that stays usable over time.
 
-> This is a community guide, not official Control D documentation.
+## Why this guide exists
 
-## What this guide covers
+Control D can be powerful, but it is easy to overdo it. The goal of this guide is to help you get the benefits of DNS filtering while keeping the configuration practical and easy to troubleshoot.
 
-- Creating a Control D account
-- Understanding profiles and devices
-- Choosing filters without excessive overblocking
-- Using Hagezi lists
-- Creating allowlists and denylists
-- Troubleshooting broken websites and apps
-- Maintaining a simple, reliable configuration
+## What you will find here
 
-## What this guide does not try to do
+- A simple way to get started
+- Basic recommendations for profiles and devices
+- Guidance on filters and third-party lists
+- Advice on custom rules and allowlists
+- Practical notes on using Hagezi lists
+- Troubleshooting steps for broken websites and apps
+- A maintenance routine so your setup stays stable
 
-This guide does not attempt to:
-
-- Block every possible domain
-- Recommend enabling every available filter
-- Replace the official [Control D documentation](https://docs.controld.com/)
-- Guarantee that every website or application will work with every configuration
-- Provide a universal configuration for every household
-
-The best DNS configuration is one that provides useful protection while allowing the websites and services you actually use to work normally.
-
-## Guide
+## Start here
 
 1. [Getting Started](docs/getting-started.md)
 2. [Profiles and Devices](docs/profiles-and-devices.md)
@@ -38,14 +28,22 @@ The best DNS configuration is one that provides useful protection while allowing
 6. [Troubleshooting](docs/troubleshooting.md)
 7. [Maintenance](docs/maintenance.md)
 
-## Related repositories
+## Recommended approach
 
-I may maintain separate repositories containing configuration files or importable Control D folders.
+If you are new to Control D, start with one profile, one device, and a modest filter set. Then test the setup for a few days before making changes.
 
-Those repositories are optional. You can follow this guide without using them.
+A good beginner setup is usually:
 
-## Important notes
+- Malware protection
+- Phishing protection
+- One moderate ad/tracker filter
+- A small allowlist for exceptions
+- No unnecessary overblocking
 
-DNS filtering can occasionally block something you need. When that happens, do not immediately add more filter lists or disable all protection. First, identify what was blocked and create the smallest exception necessary.
+The best configuration is not the most aggressive one. It is the one that works reliably and is easy to maintain.
 
-Aggressive configurations generally require more maintenance.
+## Notes
+
+This guide is not official Control D documentation and not a guarantee that any single setup will work for every device or household.
+
+The official documentation is still the best source for feature-level details and product changes.

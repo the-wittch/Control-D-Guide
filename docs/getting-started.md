@@ -1,23 +1,21 @@
 # Getting Started
 
-Control D is a managed DNS service. DNS translates domain names, such as `example.com`, into the addresses used to connect to websites and services.
+Control D is a managed DNS service. It sits between your device and the internet and can decide whether a domain should resolve normally, be blocked, or be redirected.
 
-Control D can use this process to:
+That makes it useful for:
 
-- Block advertisements and trackers
-- Block malware and phishing domains
-- Apply content restrictions
-- Redirect supported services
-- Create custom allow and block rules
-- Apply different policies to different devices
+- Privacy protection
+- Ad and tracker blocking
+- Malware and phishing protection
+- Content filtering
+- Custom allow and deny rules
+- Per-device policy management
 
-## Create an account
+## Step 1: Create an account
 
-Visit [Control D](https://controld.com/personal/) and create an account.
+Go to [Control D](https://controld.com/personal/) and create an account.
 
-After signing in, open the Control D dashboard.
-
-The dashboard is where you manage:
+After signing in, open the Control D dashboard and look for the main sections:
 
 - Profiles
 - Devices or endpoints
@@ -26,55 +24,53 @@ The dashboard is where you manage:
 - Custom rules
 - Profile options
 
-## Start with one profile
+## Step 2: Start with one profile
 
-If you are new to Control D, begin with one profile instead of creating many profiles immediately.
+If this is your first time using Control D, begin with one profile.
 
-A simple first profile makes troubleshooting easier. You can create additional profiles later when you understand how your configuration behaves.
+Do not create five profiles immediately. Get one working setup first and then expand later if needed.
 
-A good starting profile should:
+A good beginner profile should include:
 
-- Block malware and phishing
-- Block common advertisements and trackers
-- Avoid excessive or highly aggressive filters
-- Allow you to create exceptions when needed
+- Malware protection
+- Phishing protection
+- One or two trusted filters
+- A small set of personal exceptions if needed
 
-## Add a device
+Avoid enabling everything at once. A simpler configuration is easier to troubleshoot and easier to maintain.
 
-A device or endpoint is something that uses a Control D profile.
+## Step 3: Add a device
 
-Examples include:
+A device is any endpoint using your profile, such as:
 
 - A computer
-- A phone
-- A web browser
+- A mobile phone
 - A tablet
 - A smart TV
+- A browser profile
 - A router
 
-Add one device first and verify that Control D is working before configuring every device in your home.
+Add just one device first and confirm that it works before applying the same configuration everywhere.
 
-## Verify that it works
+## Step 4: Verify the setup
 
-After connecting a device to Control D:
+After connecting a device, test basic internet access:
 
-1. Visit a few websites that you regularly use.
-2. Open applications that require internet access.
-3. Check the Control D activity or query log.
-4. Confirm that DNS requests are reaching Control D.
-5. Look for blocked requests that might be causing problems.
+- Open a few websites you use often
+- Check search, email, and streaming services
+- Confirm that common apps still function
+- Watch the Control D query log for blocked requests
 
-Do not judge the configuration only by how many requests it blocks. A successful configuration is one that provides useful protection without interfering with normal use.
+The goal is not to block the maximum number of domains. The goal is to get useful protection without making the internet frustrating to use.
 
-## Recommended first step
+## Step 5: Keep it simple
 
-Start with a moderate configuration and use it for a few days.
+A good starting strategy is:
 
-During that time:
+1. Add one moderate profile
+2. Test it for a few days
+3. Check what failed and why
+4. Add narrow exceptions only where needed
+5. Avoid turning on more filters until you understand the effect
 
-- Note websites that do not work correctly.
-- Check blocked queries when something fails.
-- Add targeted exceptions only when necessary.
-- Avoid adding several new filters at once.
-
-This gives you a clear understanding of what caused a problem.
+This approach helps you avoid overblocking and reduces maintenance headaches later.

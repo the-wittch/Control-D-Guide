@@ -2,61 +2,63 @@
 
 Custom rules let you manually allow, block, or redirect domains.
 
-They are useful when a filter does not behave exactly as you want.
+This is where you can fine-tune a profile without turning it into a giant exception list that is impossible to maintain.
 
-## Create an allowlist
+## Allowlist
 
-An allowlist contains domains that should be allowed.
+An allowlist contains domains you want to permit even if a filter would otherwise block them.
 
-Use it for a domain that is incorrectly blocked by a filter.
+Use allowlist entries when:
 
-A good allowlist entry should be as specific as possible. Avoid allowing an entire unrelated domain when only one subdomain is required.
+- A website is being blocked incorrectly
+- An app needs a specific API or CDN domain
+- A trusted service is being caught by a broad list
 
-Before adding an exception:
+Important: keep the allowlist as narrow as possible.
 
-1. Confirm that the domain is actually being blocked.
-2. Check the Control D query log.
-3. Confirm that the blocked request is responsible for the problem.
-4. Add the smallest exception that fixes the issue.
-5. Test the website or application again.
+A good allowlist entry is:
 
-## Create a denylist
+- Specific
+- Necessary
+- Well-documented
+- Easy to review later
 
-A denylist contains domains that should always be blocked.
+## Denylist
 
-You might use one for:
+A denylist contains domains you want to block regardless of other filters.
 
-- A website you do not want to access
-- A tracker that is not covered by your filters
-- A domain used by an unwanted application
-- A personal content restriction
+This is helpful when:
+
+- You know a specific domain is unwanted
+- A website is not covered by your active filters
+- You want a personal rule for a domain you do not trust
 
 ## Use folders
 
-Folders help organize custom rules.
+Folders help keep rules organized.
 
-Useful folders include:
+Useful folder names include:
 
-- `Allowlist`
-- `Denylist`
-- `Work`
-- `Kids`
-- `Temporary`
-- `Testing`
+- Allowlist
+- Denylist
+- Work
+- Kids
+- Temporary
+- Exceptions
 
-Keeping rules organized makes future maintenance easier.
+This helps a lot when you later need to audit or clean up rules.
 
 ## Wildcards
 
 Wildcards can apply a rule to multiple subdomains.
 
-For example:
+Example:
 
 ```text
 *.example.com
 ```
 
-This may apply to subdomains such as:
+This may affect several subdomains, including:
 
 ```text
 www.example.com
@@ -64,17 +66,18 @@ api.example.com
 cdn.example.com
 ```
 
-Use wildcards carefully. A broad wildcard can affect more services than expected.
+Use them carefully. Broad wildcards can affect more than you intended.
 
-## Do not use exceptions as a first response
+## Best practice: narrow exceptions
 
-If something breaks, avoid immediately allowing every domain associated with the website.
+If a website is broken, do not immediately allow a whole domain family.
 
 Instead:
 
-- Inspect the query log.
-- Identify the blocked request.
-- Allow only the necessary domain.
-- Re-test the affected service.
+1. Check the Control D query log
+2. Identify the exact blocked domain
+3. Allow only the necessary domain
+4. Re-test the site or app
+5. Keep the exception documented
 
-This keeps the protection provided by your other filters.
+This is much safer than allowing broad categories or random domains.

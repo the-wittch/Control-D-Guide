@@ -1,78 +1,84 @@
 # Profiles and Devices
 
-## What is a profile?
+## What a profile is
 
-A profile contains the rules and settings that Control D applies to a device.
+A profile defines the rules that apply to a device or group of devices.
 
-A profile can include:
+Typical profile elements include:
 
 - Filters
 - Services
 - Custom rules
-- Security settings
+- Security and privacy settings
 - Content restrictions
-- DNS behavior settings
 
-Think of a profile as a policy.
+A profile is essentially a policy.
 
-## What is a device?
+## What a device is
 
-A device is the endpoint that uses a profile.
+A device is the endpoint using that policy.
 
-For example, you might create:
+Examples include:
 
-| Device | Profile |
-|---|---|
-| Personal computer | Balanced |
-| Personal phone | Balanced |
-| Smart TV | Basic |
-| Child's tablet | Kids |
-| Router | Basic |
+- Personal laptop
+- Smartphone
+- Tablet
+- Router
+- Smart TV
+- Browser profile
 
-The names are only for your organization. Choose names that make it obvious what each endpoint represents.
+## Simple profile strategy
 
-## Start with a simple arrangement
-
-A beginner usually needs only one or two profiles.
+For most people, a simple setup works better than a highly segmented one.
 
 ### Basic
 
-Use this for devices where compatibility is more important than stronger filtering.
+Use Basic for devices where compatibility matters more than aggressive blocking.
 
-Examples:
+Good fits:
 
 - Smart TVs
 - Game consoles
 - Shared household devices
-- Devices that frequently have connectivity problems
+- Older or more sensitive devices
 
 ### Balanced
 
-Use this as a general-purpose profile.
+This is the best all-around choice for many people.
 
-It should provide:
+A balanced profile usually provides:
 
-- Malware protection
-- Phishing protection
-- Advertisement and tracker blocking
-- A reasonable level of privacy protection
-- Minimal compatibility problems
+- Malware and phishing filtering
+- Ad and tracker reduction
+- A manageable level of privacy protection
+- Lower risk of false positives than a hardened setup
 
 ### Hardened
 
-Use this only after you are comfortable troubleshooting.
+Use Hardened only after you are comfortable troubleshooting and maintaining DNS rules.
 
-A hardened profile may block more trackers, newly registered domains, telemetry, and other questionable traffic. It also has a greater chance of causing false positives.
+This profile may block more domains and may be more likely to cause compatibility issues.
 
-## Do not make profiles unnecessarily complicated
+## Example arrangement
 
-Creating a separate profile for every device is not always useful.
+| Device | Suggested profile |
+|---|---|
+| Personal computer | Balanced |
+| Smartphone | Balanced |
+| Smart TV | Basic |
+| Router | Basic |
+| Child device | Kids or limited profile |
 
-Create a new profile when the device genuinely needs different rules. For example:
+The exact names do not matter. What matters is that the profile matches the device's needs.
 
-- A child's device needs content restrictions.
-- A smart TV needs fewer filters.
-- A work device needs a more relaxed configuration.
-- A personal browser can use stronger protection.
+## Keep it manageable
 
-Otherwise, reuse the same profile.
+Do not create a new profile for every single device unless the policies are genuinely different.
+
+Create additional profiles only when:
+
+- A device needs different filtering rules
+- A family member has different needs
+- A profile should be more permissive or more restrictive than the default
+
+The simplest configuration that works well is usually the best one.

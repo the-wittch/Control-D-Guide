@@ -2,77 +2,77 @@
 
 Filters, also called blocklists, prevent selected domains from resolving.
 
-They can block:
+They can block many types of unwanted traffic, including:
 
-- Advertisements
+- Ads
 - Trackers
 - Malware
-- Phishing websites
+- Phishing domains
 - Telemetry
-- Social media
 - Adult content
-- Newly registered domains
+- New or suspicious domains
 
-## Start with fewer filters
+## Start small
 
-Adding more filters does not automatically create better protection.
+The biggest beginner mistake is adding too many filters at once.
 
-Different lists often contain overlapping domains. Some lists may also contain entries that are missing useful exceptions. Combining too many lists can result in:
+More filters does not automatically mean better protection. It often means:
 
-- Broken websites
-- Apps that cannot connect
-- Missing images or videos
-- Login problems
-- Difficult troubleshooting
-- More time spent maintaining exceptions
+- More broken pages
+- More app problems
+- More false positives
+- More allowlist exceptions
+- Harder troubleshooting
 
-Start with a small number of reputable filters and add more only when you have a specific reason.
+Start with a small number of well-known filters and expand only when necessary.
 
 ## Native Control D filters
 
-Control D provides its own filters and may offer different modes for some categories.
+Control D has native filtering options with different modes depending on the category.
 
 Use the less aggressive mode when:
 
-- You are setting up Control D for the first time.
-- Other people use the network.
-- You do not want to troubleshoot frequently.
-- Compatibility is more important than maximum blocking.
+- You are still learning the product
+- You want fewer compatibility issues
+- You are protecting multiple family devices
+- You want low-maintenance protection
 
-Use more aggressive modes only when you understand the possible consequences.
+Use stricter modes only when you are comfortable with the trade-offs.
 
 ## Third-party filters
 
-Third-party lists can provide additional coverage, but they should be selected carefully.
+Third-party lists can provide useful coverage, but they should be used carefully.
 
-A good filter should have:
+A reputable list should have:
 
-- A clear purpose
+- Clear purpose and scope
 - Active maintenance
-- A reasonable false-positive policy
-- Documentation
-- A way to report problems
+- A known false-positive strategy
+- Documentation for configuration
+- A method for reporting issues
 
-The goal is not to use every available list. The goal is to use a small number of effective lists that work well together.
+The goal is not to enable every blocklist available. The goal is to pick a small set of strong filters that work well together.
 
-## A practical starting point
+## Practical beginner setup
 
-For a general-purpose profile, start with:
+A reasonable starting configuration might be:
 
 - Malware protection
 - Phishing protection
-- A moderate advertisement and tracker filter
-- One reputable third-party list, if needed
+- One moderate ad and tracker filter
+- Optional lightweight third-party list if needed
 
-Use the configuration for several days before making further changes.
+Then test it for several days before making more changes.
 
 ## Filters versus custom rules
 
-Use a filter when you want broad, automated protection across many domains.
+Use filters when you want broad protection across many domains.
 
-Use a custom rule when you want to:
+Use custom rules when you want to:
 
 - Allow one specific domain
 - Block one specific domain
-- Create a personal exception
-- Apply a rule to a small group of domains
+- Create a targeted exception
+- Manage a small group of rules more precisely
+
+Filters are broad. Custom rules are surgical.
