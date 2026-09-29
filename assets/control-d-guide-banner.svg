@@ -1,52 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
   <title id="title">Control D Guide</title>
-  <desc id="desc">Diagram of a device query passing through DNS filtering to the internet</desc>
-  <defs>
-    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#102033"/>
-      <stop offset="100%" stop-color="#163049"/>
-    </linearGradient>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0 1.5 L8 5 L0 8.5 Z" fill="#7dd3c0"/>
-    </marker>
-  </defs>
+  <desc id="desc">Soft illustration for the Control D community guide</desc>
 
-  <rect width="1200" height="300" rx="16" fill="url(#panel)"/>
+  <!-- page-like panel matching site cream / mint -->
+  <rect width="1200" height="300" rx="18" fill="#f7faf9"/>
+  <rect x="24" y="24" width="1152" height="252" rx="16" fill="#ffffff" stroke="#dfe7ed" stroke-width="2"/>
 
-  <!-- quiet grid -->
-  <g stroke="#2a4560" stroke-width="1" opacity=".45">
-    <path d="M60 60 H1140 M60 120 H1140 M60 180 H1140 M60 240 H1140"/>
-    <path d="M180 40 V260 M360 40 V260 M540 40 V260 M720 40 V260 M900 40 V260 M1080 40 V260"/>
+  <!-- soft mint blob -->
+  <circle cx="980" cy="70" r="150" fill="#dff7ef"/>
+  <circle cx="1080" cy="230" r="110" fill="#e8f3ff" opacity=".9"/>
+
+  <!-- site-style check badge -->
+  <circle cx="210" cy="150" r="78" fill="#087f73"/>
+  <path d="M168 152 l28 28 56-64" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- title -->
+  <text x="340" y="140" font-family="Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="56" font-weight="800" fill="#112033" letter-spacing="-1.5">Control D Guide</text>
+  <text x="342" y="188" font-family="Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="24" font-weight="500" fill="#617084">Profiles, filters, and rules that stay maintainable</text>
+
+  <!-- three soft chips -->
+  <g font-family="Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#087f73">
+    <rect x="342" y="216" width="118" height="36" rx="8" fill="#dff7ef"/>
+    <text x="401" y="240" text-anchor="middle">Profiles</text>
+
+    <rect x="476" y="216" width="102" height="36" rx="8" fill="#dff7ef"/>
+    <text x="527" y="240" text-anchor="middle">Filters</text>
+
+    <rect x="594" y="216" width="92" height="36" rx="8" fill="#dff7ef"/>
+    <text x="640" y="240" text-anchor="middle">Rules</text>
   </g>
-
-  <!-- device -->
-  <rect x="90" y="95" width="150" height="110" rx="12" fill="#0c1826" stroke="#5f8eab" stroke-width="2"/>
-  <rect x="112" y="118" width="106" height="54" rx="4" fill="#1a334a"/>
-  <circle cx="165" cy="188" r="5" fill="#7dd3c0"/>
-  <text x="165" y="78" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="18" fill="#9ec0d6">device</text>
-
-  <!-- arrow to filter -->
-  <line x1="255" y1="150" x2="380" y2="150" stroke="#7dd3c0" stroke-width="3" marker-end="url(#arrow)"/>
-
-  <!-- filter / Control D -->
-  <rect x="395" y="75" width="250" height="150" rx="12" fill="#0c1826" stroke="#7dd3c0" stroke-width="2.5"/>
-  <text x="520" y="115" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="20" fill="#d7f3ea">Control D</text>
-  <text x="520" y="145" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="15" fill="#8fb6c9">profiles · filters · rules</text>
-  <!-- allow / block rows -->
-  <rect x="430" y="165" width="78" height="28" rx="6" fill="#1d4a3c"/>
-  <text x="469" y="184" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#9fecc9">allow</text>
-  <rect x="528" y="165" width="78" height="28" rx="6" fill="#4a2a2a"/>
-  <text x="567" y="184" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#f0b4b4">block</text>
-
-  <!-- arrow to internet -->
-  <line x1="660" y1="150" x2="800" y2="150" stroke="#7dd3c0" stroke-width="3" marker-end="url(#arrow)"/>
-
-  <!-- internet / destinations -->
-  <circle cx="920" cy="150" r="70" fill="#0c1826" stroke="#5f8eab" stroke-width="2"/>
-  <circle cx="920" cy="150" r="42" fill="none" stroke="#3f6f8d" stroke-width="1.5" stroke-dasharray="4 5"/>
-  <text x="920" y="145" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="16" fill="#c5dce9">internet</text>
-  <text x="920" y="168" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#7fa3ba">only what you allow</text>
-
-  <!-- small caption -->
-  <text x="90" y="270" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="16" fill="#6f91a8">query → policy → response</text>
 </svg>
