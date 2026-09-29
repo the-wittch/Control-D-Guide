@@ -1,15 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
-  <title id="title">Control D Guide banner</title>
-  <desc id="desc">Simple setup. Practical protection. Easy maintenance.</desc>
+  <title id="title">Control D Guide</title>
+  <desc id="desc">Diagram of a device query passing through DNS filtering to the internet</desc>
   <defs>
-    <linearGradient id="bg" x1="0" x2="1"><stop offset="0" stop-color="#0b1220"/><stop offset="1" stop-color="#17324a"/></linearGradient>
-    <linearGradient id="accent" x1="0" x2="1"><stop offset="0" stop-color="#67e8f9"/><stop offset="1" stop-color="#34d399"/></linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#102033"/>
+      <stop offset="100%" stop-color="#163049"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 1.5 L8 5 L0 8.5 Z" fill="#7dd3c0"/>
+    </marker>
   </defs>
-  <rect width="1200" height="300" fill="url(#bg)" rx="22"/>
-  <circle cx="1020" cy="-15" r="220" fill="#34d399" opacity=".12"/><circle cx="1120" cy="270" r="170" fill="#67e8f9" opacity=".10"/>
-  <path d="M120 72h188c22 0 40 18 40 40v76c0 22-18 40-40 40H120c-22 0-40-18-40-40v-76c0-22 18-40 40-40Z" fill="none" stroke="url(#accent)" stroke-width="9"/>
-  <path d="m126 148 48 48 105-130" fill="none" stroke="url(#accent)" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="410" y="130" font-family="Arial,Helvetica,sans-serif" font-size="64" font-weight="700" fill="#f1faff">Control D Guide</text>
-  <text x="414" y="184" font-family="Arial,Helvetica,sans-serif" font-size="27" fill="#bde4f4">Simple setup · Practical protection · Easy maintenance</text>
-  <rect x="414" y="216" width="194" height="42" rx="21" fill="url(#accent)"/><text x="453" y="244" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#07131d">Start simply</text>
+
+  <rect width="1200" height="300" rx="16" fill="url(#panel)"/>
+
+  <!-- quiet grid -->
+  <g stroke="#2a4560" stroke-width="1" opacity=".45">
+    <path d="M60 60 H1140 M60 120 H1140 M60 180 H1140 M60 240 H1140"/>
+    <path d="M180 40 V260 M360 40 V260 M540 40 V260 M720 40 V260 M900 40 V260 M1080 40 V260"/>
+  </g>
+
+  <!-- device -->
+  <rect x="90" y="95" width="150" height="110" rx="12" fill="#0c1826" stroke="#5f8eab" stroke-width="2"/>
+  <rect x="112" y="118" width="106" height="54" rx="4" fill="#1a334a"/>
+  <circle cx="165" cy="188" r="5" fill="#7dd3c0"/>
+  <text x="165" y="78" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="18" fill="#9ec0d6">device</text>
+
+  <!-- arrow to filter -->
+  <line x1="255" y1="150" x2="380" y2="150" stroke="#7dd3c0" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- filter / Control D -->
+  <rect x="395" y="75" width="250" height="150" rx="12" fill="#0c1826" stroke="#7dd3c0" stroke-width="2.5"/>
+  <text x="520" y="115" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="20" fill="#d7f3ea">Control D</text>
+  <text x="520" y="145" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="15" fill="#8fb6c9">profiles · filters · rules</text>
+  <!-- allow / block rows -->
+  <rect x="430" y="165" width="78" height="28" rx="6" fill="#1d4a3c"/>
+  <text x="469" y="184" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#9fecc9">allow</text>
+  <rect x="528" y="165" width="78" height="28" rx="6" fill="#4a2a2a"/>
+  <text x="567" y="184" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#f0b4b4">block</text>
+
+  <!-- arrow to internet -->
+  <line x1="660" y1="150" x2="800" y2="150" stroke="#7dd3c0" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- internet / destinations -->
+  <circle cx="920" cy="150" r="70" fill="#0c1826" stroke="#5f8eab" stroke-width="2"/>
+  <circle cx="920" cy="150" r="42" fill="none" stroke="#3f6f8d" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <text x="920" y="145" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="16" fill="#c5dce9">internet</text>
+  <text x="920" y="168" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#7fa3ba">only what you allow</text>
+
+  <!-- small caption -->
+  <text x="90" y="270" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="16" fill="#6f91a8">query → policy → response</text>
 </svg>

@@ -17,7 +17,6 @@ title: Home
   <div class="hero-art">
     <div class="art-glow"></div>
     <img src="{{ '/assets/control-d-guide-banner.svg' | relative_url }}" alt="Control D Guide illustration">
-    <div class="floating-badge"><span class="badge-check">✓</span><span><strong>Written for beginners</strong><small>From a working home setup</small></span></div>
   </div>
 </section>
 
